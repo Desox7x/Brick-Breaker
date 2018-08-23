@@ -7,6 +7,7 @@ public class Life : MonoBehaviour {
 
     public static int Vidas = 4;
     public Text lifeText;
+    public GameObject gameOver;
 
     public MovimientoBarra barrita;
     public MovimientoBola bolita;
@@ -20,11 +21,21 @@ public class Life : MonoBehaviour {
     }
 	// Update is called once per frame
 	public void PerderVida () {
+
+        if (Vidas <= 0) return;
         Vidas--; //Se restan las vidas
         Update();
         
-        barrita.Reset();
-        bolita.Reset();
-        //Cuando se pierde una vida se resetean la barra y la bola
-	}
+        if(Vidas <= 0)
+        {
+            gameOver.SetActive(true); //Aparece el mensaje de Game Over
+        }
+        else
+        {
+            barrita.Reset();
+            bolita.Reset();
+        } //Cuando se pierde una vida se resetean la barra y la bola
+
+
+    }
 }

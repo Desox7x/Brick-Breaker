@@ -56,9 +56,12 @@
      <Compile Include="Assets\BallReset.cs" />
      <Compile Include="Assets\Scripts\BallR.cs" />
      <Compile Include="Assets\Scripts\Brick.cs" />
+     <Compile Include="Assets\Scripts\ExitGame.cs" />
      <Compile Include="Assets\Scripts\Life.cs" />
      <Compile Include="Assets\Scripts\MovimientoBarra.cs" />
      <Compile Include="Assets\Scripts\MovimientoBola.cs" />
+     <Compile Include="Assets\Scripts\Points.cs" />
+     <Compile Include="Assets\Scripts\StartGame.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/UnityProjects/BrickBreaker/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

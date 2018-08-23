@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Life : MonoBehaviour {
 
-    public static int Vidas = 3;
+    public static int Vidas = 4;
     public Text lifeText;
 
     public MovimientoBarra barrita;

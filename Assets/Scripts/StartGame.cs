@@ -11,7 +11,7 @@ public class StartGame : MonoBehaviour {
         {
             Points.score = 0;
             Life.Vidas = 4;
-            SceneManager.LoadScene("Nivel1");
+            SceneManager.LoadScene("Nivel1"); //Carga la escena "Nivel 1"
         }	
 	}
 }

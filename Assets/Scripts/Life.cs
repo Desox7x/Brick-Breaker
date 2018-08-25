@@ -8,6 +8,7 @@ public class Life : MonoBehaviour {
     public static int Vidas = 4;
     public Text lifeText;
     public GameObject gameOver;
+    public NextLevel nextLevel;
 
     public MovimientoBarra barrita;
     public MovimientoBola bolita;
@@ -29,6 +30,12 @@ public class Life : MonoBehaviour {
         if(Vidas <= 0)
         {
             gameOver.SetActive(true); //Aparece el mensaje de Game Over
+            bolita.StopMovement(); //Detener movimiento de la bola
+            barrita.enabled = false; //Desactivamos el Script de la barra para que no se mueva con el Game Over
+
+            nextLevel.LoadLevel = "Menu";
+            nextLevel.StartLoading();
+
         }
         else
         {

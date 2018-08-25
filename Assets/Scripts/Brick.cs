@@ -11,7 +11,8 @@ public class Brick : MonoBehaviour {
     {
        
         Instantiate(efectoParticulas, transform.position, Quaternion.identity); //Instanciar el efecto de particulas al destruir
-        Destroy(gameObject);
+        Destroy(gameObject); //Se destruye el objeto    
+        transform.SetParent(null);
         points.anotarPuntos();
 
         

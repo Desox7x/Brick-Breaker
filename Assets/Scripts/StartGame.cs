@@ -10,7 +10,7 @@ public class StartGame : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
         {
             Points.score = 0;
-            Life.Vidas = 4;
+            Life.Vidas = 5;
             SceneManager.LoadScene("Nivel1"); //Carga la escena "Nivel 1"
         }	
 	}

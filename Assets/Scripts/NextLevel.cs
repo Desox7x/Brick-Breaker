@@ -14,6 +14,10 @@ public class NextLevel : MonoBehaviour {
     }
     void CargarNivel()
     {
+        if (!LastLevel())
+        {
+            Life.Vidas++;
+        }
         SceneManager.LoadScene(LoadLevel);
     }
     public bool LastLevel()
